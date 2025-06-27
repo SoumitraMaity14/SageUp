@@ -1,0 +1,144 @@
+.recommendations {
+  padding: 70px 0;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section heading styles */
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  color: #002060;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Grid layout */
+.institutes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Card styles */
+.institute-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.institute-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Top block */
+.card-img {
+  height: 160px;
+  background: linear-gradient(135deg, #E2E4EE, #E5EFFE);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #002060;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Main content */
+.card-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #f4dfbd;
+  margin-bottom: 8px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Experience heading */
+.experience-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #002060;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.short-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Footer section */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #002060;
+}
+
+.view-profile-btn {
+  padding: 8px 14px;
+  background: #E2E4EE;
+  color: #002060;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-profile-btn:hover {
+  background: #f4dfbd;
+}
