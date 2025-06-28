@@ -42,7 +42,10 @@ const RecommendedSubjects = () => {
 
   return (
     <section className="recommended-subjects">
-      <h2 className="level-heading">Course offered</h2>
+      <div className="section-heading">
+      <h2 >Course offered</h2>
+      <p>Explore our top subjects tailored for your learning journey</p>
+      </div>
       <div className="subject-grid">
         {topSubjects.map((subject) => (
           <div
@@ -50,7 +53,7 @@ const RecommendedSubjects = () => {
             className={`subject-card ${levelColors[subject.level]}`}
           >
             <h3>{subject.name}</h3>
-            <p><strong>Category:</strong> {subject.category}</p>
+            <p className='subject-category'>{subject.category}</p>
             <p className="sub-info"><FaMapMarkerAlt /> {subject.location || 'N/A'}</p>
             {subject.availability?.days?.length > 0 && (
               <p className="sub-info">

@@ -1,0 +1,73 @@
+
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.allslide {
+  width: 420px;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(4px);
+  border-radius: 10px;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.testimonialBox {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 90px;
+  color: #999;
+}
+
+.testimonialBox .quote {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.5;
+}
+
+.testimonialBox .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imgBx img {
+  width: 60px;
+  height: 60px;
+}
+
+.imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBx h3 {
+  margin-left: 10px;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  display: none;
+}

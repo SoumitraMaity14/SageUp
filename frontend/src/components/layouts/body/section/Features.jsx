@@ -18,7 +18,7 @@ const features = [
 const Features = () => {
   return (
     <section className="features">
-      <div className="section-title">
+      <div className="section-heading">
         <h2>Why Choose SageUp?</h2>
         <p>
           We provide the best platform to discover and connect with top

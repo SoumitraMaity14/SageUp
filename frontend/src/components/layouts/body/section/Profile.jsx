@@ -40,12 +40,12 @@ const Profiles = () => {
             >
               <div className="card-img">{profile.user?.name || 'Profile'}</div>
               <div className="card-content">
-                <h3 style={{ color: '#f4dfbd' }}>{profile.user?.name}</h3>
+                <h3 style={{ color: 'black' }}>{profile.user?.name}</h3>
                 <div className="card-meta">
                   <div><FaMapMarkerAlt /> {profile.location}</div>
                   <div className="rating">
                     {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} color="#f4dfbd" />
+                      <FaStar key={i} color="#ff4545" />
                     ))}
                   </div>
                 </div>
