@@ -145,4 +145,24 @@ router.get('/api/profiles/me', authenticate, async (req, res) => {
   }
 });
 
+router.get('/api/best-teachers', async (req, res) => {
+  try {
+    const levels = ['beginner', 'intermediate', 'advanced'];
+    const levelGroups = {};
+
+    for (const level of levels) {
+      const subjects = await Subject.find({ level }).populate('user');
+      const teacherIds = [...new Set(subjects.map((s) => s.user._id.toString()))];
+      const profiles = await Profile.find({ user: { $in: teacherIds } }).populate('user');
+      levelGroups[level] = profiles;
+    }
+
+    res.json(levelGroups); // { beginner: [...], intermediate: [...], advanced: [...] }
+  } catch (err) {
+    console.error('Error fetching best teachers:', err);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+
 module.exports = router;
