@@ -1,0 +1,83 @@
+.cleaning-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.intro {
+  background-color: #e6f2fb;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.intro p {
+  font-size: 16px;
+  color: #555;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.cta-button {
+  margin-top: 40px;
+}
+
+.cta-button button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+  background-color: #0056b3;
+}
