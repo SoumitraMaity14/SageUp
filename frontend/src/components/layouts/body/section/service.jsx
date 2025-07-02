@@ -1,4 +1,3 @@
-import React from 'react'
 import './Service.css'
 import skillDevelopmentImg from '../../../../assets/skill-development-image.jpg';
 import onlineTutoringImg from '../../../../assets/online-tutoring.jpg';
