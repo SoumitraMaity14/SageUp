@@ -1,6 +1,9 @@
 
-body{
-  margin:0;
+.App{
+
   padding: 0;
+
+  justify-content: center !important;
+  margin: 0 auto;
 }
 

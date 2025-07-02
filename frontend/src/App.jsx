@@ -6,12 +6,12 @@ import Footer from './components/layouts/footer/Footer'
 function App() {
 
   return (
-    <>
+    <div className="App">
       <Header />
-      <h1>Education Tutorial</h1>
+
       <Body/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
