@@ -6,7 +6,7 @@ import Profile from './section/Profile.jsx';
 import Features from './section/Features.jsx';
 import RecommendedSubjects from './section/RecommendedSubjects.jsx';
 import Testimonial from './section/Testimonial.jsx';
-import Service from './section/Service.jsx';
+import Service from './section/service.jsx';
 const Body = () => {
     return (
        <div className="body-container">

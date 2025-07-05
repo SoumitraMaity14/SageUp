@@ -1,4 +1,4 @@
-import './Service.css'
+import './service.css'
 import skillDevelopmentImg from '../../../../assets/skill-development-image.jpg';
 import onlineTutoringImg from '../../../../assets/online-tutoring.jpg';
 import careerCounselingImg from '../../../../assets/career-counseling.jpg';
