@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         <div className="copyright">
-          <p>&copy; 2023 SageUp. All rights reserved. | Designed with <FaHeart color="red" /> for students worldwide</p>
+          <p>&copy; 2025 SageUp. All rights reserved. | Designed with <FaHeart color="red" /> for students worldwide</p>
         </div>
       </div>
     </footer>
