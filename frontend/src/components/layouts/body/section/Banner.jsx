@@ -53,7 +53,7 @@ const Banner = () => {
                     transition={{ delay: 0.5 }}
                 />
                 <motion.img
-                    className="circle-img img3"
+                    className="circle-img3 img3"
                     src={student3}
                     alt="Student"
                     initial={{ y: 50, opacity: 0 }}
