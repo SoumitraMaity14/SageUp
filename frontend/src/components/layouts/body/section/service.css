@@ -47,14 +47,24 @@
 }
 
 .service-card {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 240px;
+  height: 280px; /* Give enough height */
   padding: 25px 20px;
-  max-width: 240px;
+  background-color: #b4b0b0;
   text-align: center;
   transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Clip to elliptical shape */
+  clip-path: ellipse(48% 45% at 50% 50%);
+  -webkit-clip-path: ellipse(48% 45% at 50% 50%);
+  overflow: hidden;
+
+  /* Remove border-radius */
+  border-radius: 0;
 }
+
+
 
 .service-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -65,10 +75,12 @@
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin: 10px auto 15px;
   border: 4px solid white;
+  background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .service-card h3 {
   font-size: 16px;
