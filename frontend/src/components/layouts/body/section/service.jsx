@@ -46,11 +46,13 @@ const ServicesSection = () => {
 
       <div className="services-grid">
         {educationServices.map((service, index) => (
-          <div className="service-card" key={index}>
-            <img src={service.image} alt={service.title} className="service-image" />
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
+          <div className="service-card" key={index} style={{ backgroundImage: `url(${service.image})` }}>
+  <div className="service-content">
+    <h3>{service.title}</h3>
+    <p>{service.description}</p>
+  </div>
+</div>
+
         ))}
       </div>
 

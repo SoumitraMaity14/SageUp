@@ -45,42 +45,34 @@
   justify-content: center;
   gap: 20px;
 }
-
 .service-card {
   width: 240px;
-  height: 280px; /* Give enough height */
-  padding: 25px 20px;
-  background-color: #b4b0b0;
-  text-align: center;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: path("M0,60 A120,60 0 0,1 240,60 L240,220 A120,60 0 0,1 0,220 Z");
+  -webkit-clip-path: path("M0,60 A120,60 0 0,1 240,60 L240,220 A120,60 0 0,1 0,220 Z");
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-  /* Clip to elliptical shape */
-  clip-path: ellipse(48% 45% at 50% 50%);
-  -webkit-clip-path: ellipse(48% 45% at 50% 50%);
   overflow: hidden;
-
-  /* Remove border-radius */
-  border-radius: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-
-
 
 .service-card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.service-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 10px auto 15px;
-  border: 4px solid white;
-  background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.service-content {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 60%, transparent);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
 }
-
 
 .service-card h3 {
   font-size: 16px;
@@ -91,13 +83,15 @@
 
 .service-card p {
   font-size: 14px;
-  color: #666;
+  color: #555;
+  line-height: 1.4;
 }
+
 
 .cta-button {
   position: relative;
   z-index: 2;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .cta-button button {
